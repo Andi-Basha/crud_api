@@ -1,0 +1,284 @@
+.App {
+  width: 100%;
+}
+
+.loginCard {
+  background-color: rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  height: 400px;
+  width: 450px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation-name: fromLeft;
+  animation-duration: 0.6s;
+}
+
+.loginCard:hover {
+  transform: scale(1.05);
+  transition: ease-in-out;
+}
+
+@keyframes fromLeft {
+  0% {
+    opacity: 0;
+    transform: scale(0.3);
+    transform: translateX(-100vw);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.02);
+  }
+  70% {
+    transform: scale(0.96);
+  }
+  100% {
+    transform: scale(1);
+    transform: translateX(0);
+  }
+}
+
+.loginCard h1 {
+  margin-bottom: 35px;
+}
+
+.red {
+  color: red;
+}
+
+.Header {
+  padding: 0rem 1rem;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.Header button {
+  margin-left: 20px;
+}
+
+.Products {
+  width: 92vw;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  gap: 20px;
+}
+
+.ProductFilter {
+  width: 200px;
+}
+
+.ProductFilter li {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.productFilterInput button {
+  margin-left: 10px;
+}
+
+.ProductList {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 30px;
+}
+
+.Products__content {
+  display: flex;
+  flex-direction: column;
+}
+
+#card-img {
+  height: 160px;
+  /* object-fit: contain; */
+}
+
+.list-group-item {
+  cursor: pointer;
+}
+
+.list-group-item:hover,
+.DarkApp .list-group-item:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.add {
+  background-color: #66ffaa;
+  /* box-shadow: 0 0 50px rgba(150, 255, 120, .6); */
+}
+
+.edit {
+  background-color: #66aaff;
+  /* box-shadow: 0 0 50px rgba(50, 140, 255, .6); */
+}
+
+.delete {
+  background-color: #ff5544;
+  /* box-shadow: 0 0 50px rgba(255, 150, 120, .6); */
+}
+
+.SideNotes {
+  width: 350px;
+  height: calc(821px + 20vh);
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.Form__Note {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.CardContainer button.btn.btn-danger {
+  margin-left: 10px;
+}
+
+.DarkApp {
+  background-color: #333333;
+  color: white;
+}
+
+.DarkApp .CardContainer {
+  background-color: #222;
+}
+
+.DarkApp input {
+  background-color: #222;
+  color: white;
+  border: 1px solid #000;
+}
+
+.DarkApp input:focus {
+  background-color: #222 !important;
+  color: white !important;
+}
+
+.DarkApp .SideNotes {
+  background-color: #444;
+}
+
+.DarkApp .Form__Note {
+  background-color: #333;
+  border-radius: 12px;
+}
+
+.DarkApp .Note__card {
+  background-color: #222;
+  border-radius: 12px;
+  border: none;
+}
+
+.DarkApp .card-body {
+  background-color: #222;
+  border-radius: 12px;
+  border: none;
+}
+
+.DarkApp .list-group-item {
+  background-color: #222;
+  border: 1px solid #000;
+  color: white !important;
+}
+
+.DarkApp .add {
+  background-color: #66ffaa;
+  box-shadow: 0 0 50px rgba(150, 255, 120, 0.6);
+  color: #000;
+}
+
+.DarkApp .edit {
+  background-color: #66aaff;
+  box-shadow: 0 0 50px rgba(50, 140, 255, 0.6);
+  color: #000;
+}
+
+.DarkApp .delete {
+  background-color: #ff5544;
+  box-shadow: 0 0 50px rgba(255, 150, 120, 0.6);
+  color: #000;
+}
+
+.DarkApp .Header {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.loginPage {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.credentials {
+  position: absolute;
+  display: flex;
+  gap: 20px;
+  bottom: 0;
+  left: 0;
+  color: gray;
+}
+
+.loginPage button.btn.btn-primary {
+  padding: 10px 30px 10px 30px;
+}
+
+.SideNotes button.btn.btn-secondary.m-3 {
+  margin: 20px 50% 10px !important;
+  transform: translate(-50%, 0);
+  width: 131px;
+}
+
+.userHeader {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.userProfile {
+  height: 60px;
+  background-color: rgba(0, 0, 0, 0.2);
+  margin: 15px;
+  border-radius: 10px;
+}
+
+@media only screen and (min-width: 1920px) {
+  .ProductList {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+@media only screen and (max-width: 1800px) {
+  .ProductList {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media only screen and (max-width: 1550px) {
+  .ProductList {
+    grid-template-columns: 1fr 1fr;
+  }
+  .CardContainer {
+    min-width: 90% !important;
+    margin: 0 auto;
+  }
+}
+@media only screen and (max-width: 1145px) {
+  .SideNotes {
+    width: 230px;
+  }
+
+  .ProductsWrapper {
+    width: 30vw;
+  }
+}
+@media only screen and (max-width: 1290px) {
+  .ProductList {
+    grid-template-columns: 1fr;
+  }
+}
